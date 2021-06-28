@@ -105,7 +105,7 @@ export function addDataVolume(
         value: '5',
       },
       mountPath: {
-        value: '/home/jovyan/{volume-name}',
+        value: '/home/{notebook-namespace}/{volume-name}',
       },
       accessModes: {
         value: 'ReadWriteOnce',

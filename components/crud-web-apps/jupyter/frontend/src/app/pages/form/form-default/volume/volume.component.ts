@@ -105,7 +105,8 @@ export class VolumeComponent implements OnInit, OnDestroy {
       this.volume.get('path'),
       this.volume
         .get('templatedPath')
-        .value.replace('{volume-name}', this.currentVolName),
+        .value.replace('{volume-name}', this.currentVolName)
+        .value.replace('{notebook-namespace}', this.namespace),
     );
   }
 
