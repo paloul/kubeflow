@@ -48,7 +48,7 @@ def post_pvc(namespace):
             notebook,
             workspace_vol["name"],
             workspace_vol["name"],
-            "/home/jovyan",
+            "/home/"+namespace, # we use namespace as the user inside notebook
         )
 
     # Add the Data Volumes
